@@ -20,7 +20,15 @@ MODELS_DATA = [(nombre, datos['accuracy'], datos['conf_matrix']) for nombre, dat
 
 
 '''
-Creating semicircle or ranking
+Generates comparison plots between models.
+
+If only one model is chosen, the resulting confusion matrix of the model's test will be displayed
+as a pie chart of accuracy and error.
+
+On the other hand, if more than one model is selected, a comparison is made between them.
+
+And if no model is chosen, a notification is displayed indicating that none has been selected.
+
 '''
 
 def render(app: Dash) -> html.Div:
@@ -54,7 +62,7 @@ def render(app: Dash) -> html.Div:
                          template="seaborn",
                          coloraxis_showscale=False)
             
-            fig_pie = px.pie(names=[model, 'Discrepancy'], values=[accuracy, 100-accuracy], template="seaborn",
+            fig_pie = px.pie(names=[f"{model} 🎯", 'Discrepancy ❌'], values=[accuracy, 100-accuracy], template="seaborn",
                  title="Model Accuracy (%) : " + model,
                  color_discrete_sequence=px.colors.sequential.Viridis) 
             
@@ -63,24 +71,33 @@ def render(app: Dash) -> html.Div:
             fig.add_trace(fig_matrix.data[0], row=1, col=1)
             fig.add_trace(fig_pie.data[0], row=1, col=2)
 
-            fig.update_layout(title=f'Model Evaluation: {model} Confusion Matrix and Accuracy',
-                              template="seaborn", coloraxis_showscale=False)
+            fig.update_layout(title=f"Model Evaluation: Confusion Matrix 📊 and Accuracy 🎯 <br><sup> <b>{model}</b> </sup>",
+                              title_font_size=24,
+                              title_x=0,
+                              template="seaborn", coloraxis_showscale=False) #this template is working
 
             return html.Div(dcc.Graph(figure=fig), id=ids.PERCENTAGE_CHART)
         
 
 
         elif num_selected_models == 0:
-            return html.Div("No data selected.", id=ids.PERCENTAGE_CHART)
+            return html.Div("No data selected. 🕸", id=ids.PERCENTAGE_CHART)
 
         else:
-            filtered_data.sort(key=lambda x: x[1])  # Ordenar por accuracy #, reverse=True
+            filtered_data.sort(key=lambda x: x[1])  # Order by accuracy
 
             models = [entry[0] for entry in filtered_data]
             accuracies = [entry[1] for entry in filtered_data]
             fig = px.bar(x=accuracies, y=models, orientation='h',
-                         labels={'x': 'Accuracy (%)', 'y': 'Model'},
-                         title='Accuracy Comparison')
+                         labels={'x': 'Accuracy (%)', 'y': 'Model '},
+                         title='Accuracy Comparison 🎯'
+                         )
+            
+            fig.update_layout(
+                title_font_size=24,  # Adjust the font size of the title
+                title_x=0,  # Adjust the title to the left
+                template="seaborn" 
+                ) #this template is working
             fig.update_traces(marker=dict(color=accuracies, 
                                colorscale='spectral', 
                                cmin=min(accuracies), 

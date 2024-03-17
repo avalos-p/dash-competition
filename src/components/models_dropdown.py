@@ -7,6 +7,7 @@ import json
 '''
 Importing data
 '''
+
 with open('data/modelos_dic.json', 'r') as json_file:
     models_dict = json.load(json_file)
 
@@ -17,6 +18,14 @@ models_names = [(nombre) for nombre,datos in models_order]
 
 models_names_original = models_names
 
+
+'''
+Create a dropdown that serves to select the models to compare
+
+It allows you to select as many models as you want to compare them.
+ Additionally, I have added a button that selects all the models for comparing
+
+'''
 
 def render(app: Dash) -> html.Div:
 
@@ -29,7 +38,7 @@ def render(app: Dash) -> html.Div:
 
     return html.Div(
         children=[
-            html.H6("Model"),
+            html.H6("Models:"),
             dcc.Dropdown(
                 id=ids.MODELS_DROPDOWN,
                 options=[{"label": name, "value": name} for name in models_names],
@@ -38,7 +47,7 @@ def render(app: Dash) -> html.Div:
             ),
             html.Button(
                 className="dropdown-button",
-                children=["Select All"],
+                children=[html.Strong("Select All ➕ ")], #This is the button for selecting all models at the same time
                 id=ids.SELECT_ALL_MODELS_BUTTON,
                 n_clicks=0,
             ),
