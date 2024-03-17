@@ -1,4 +1,4 @@
-# Credit Card transactions fraud detection using Machine Learning and Dash!
+# 🇺🇸 Credit Card transactions fraud detection using Machine Learning and Dash!
 
 <table>
 <tr>
@@ -18,7 +18,7 @@ Project Information:
 
 ## Useful Links
 - Challenge: [Challenge Link](https://community.plotly.com/t/dash-app-challenge-fraud-detection/82409)
-- Dataset: [Dataset Link on Kaggle](https://www.kaggle.com/datasets/kartik2112/fraud-detection?select=fraudTrain.csv)
+- Dataset: [![Kaggle](https://img.shields.io/badge/-Kaggle-000000?style=flat&logo=Kaggle)](https://www.kaggle.com/datasets/kartik2112/fraud-detection?select=fraudTrain.csv)
 
 ###  Development Environment Setup
 
@@ -32,7 +32,7 @@ To set up the development environment, follow these steps:
 
 
 
-# Proyecto de Detección de Fraude en Transacciones con Tarjetas de Crédito
+# 🇪🇸 Proyecto de Detección de Fraude en Transacciones con Tarjetas de Crédito
 
 <table>
 <tr>
@@ -51,7 +51,7 @@ Este proyecto tiene como objetivo realizar un análisis del conjunto de datos de
 
 ## Enlaces Útiles
 - Desafío: [Link al Desafío](https://community.plotly.com/t/dash-app-challenge-fraud-detection/82409)
-- Dataset: [Link al Dataset en Kaggle](https://www.kaggle.com/datasets/kartik2112/fraud-detection?select=fraudTrain.csv)
+- Dataset: [![Kaggle](https://img.shields.io/badge/-Kaggle-000000?style=flat&logo=Kaggle)](https://www.kaggle.com/datasets/kartik2112/fraud-detection?select=fraudTrain.csv)
 
 ###  Configuración del entorno de desarrollo
 
