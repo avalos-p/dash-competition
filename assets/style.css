@@ -1,0 +1,81 @@
+hr {
+    border-top: 2px solid #2c3e50; /* azul oscuro */
+}
+
+.dropdown-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    position: relative;
+    z-index: 1000;
+
+}
+
+.dropdown-button {
+    width: 100%;
+    margin-top: 5px;
+    background-color: #34495e; /* azul oscuro */
+    color: #fff; /* blanco */
+    border: none;
+    border-radius: 5px;
+    padding: 8px 12px;
+    cursor: pointer;
+    font-family: "Times New Roman", Times, serif; /* Cambio a Times New Roman */
+    font-size: 14px;
+}
+
+.tabs-group {
+    padding-top: 20px;
+}
+
+.app-div {
+    padding: 10px;
+    font-family: "Times New Roman", Times, serif; /* Cambio a Times New Roman */
+}
+
+.data-table-div {
+    margin: auto;
+    padding: 10px;
+    font-family: "Times New Roman", Times, serif; /* Cambio a Times New Roman */
+}
+
+.budget-label {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "Times New Roman", Times, serif; /* Cambio a Times New Roman */
+}
+
+.budget-text {
+    font-size: 20px;
+    font-family: "Times New Roman", Times, serif; /* Cambio a Times New Roman */
+}
+
+.budget-text-value {
+    font-size: 20px;
+    font-style: italic;
+    font-family: "Times New Roman", Times, serif; /* Cambio a Times New Roman */
+}
+
+.budget-progress-bar {
+    height: 20px;
+    background-color: #2980b9; /* azul */
+}
+
+.budget-tooltip {
+    font-size: 18px;
+    font-family: "Times New Roman", Times, serif; /* Cambio a Times New Roman */
+}
+
+.checklist {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    font-family: "Times New Roman", Times, serif; /* Cambio a Times New Roman */
+}
+
+@media(max-width: 800px) {
+    .dropdown-container {
+        /* Estilos adicionales para pantallas estrechas si es necesario */
+    }
+}
+

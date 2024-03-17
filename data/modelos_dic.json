@@ -1,0 +1,158 @@
+{
+    "Logistic Regression": {
+        "conf_matrix": [
+            [
+                1814,
+                117
+            ],
+            [
+                475,
+                1455
+            ]
+        ],
+        "accuracy": 0.8466718466718467
+    },
+    "Perceptron": {
+        "conf_matrix": [
+            [
+                1541,
+                390
+            ],
+            [
+                721,
+                1209
+            ]
+        ],
+        "accuracy": 0.7122507122507122
+    },
+    "SVC(Support Vector Classifier)": {
+        "conf_matrix": [
+            [
+                1759,
+                172
+            ],
+            [
+                264,
+                1666
+            ]
+        ],
+        "accuracy": 0.887075887075887
+    },
+    "Ada Boost Classifier": {
+        "conf_matrix": [
+            [
+                1821,
+                110
+            ],
+            [
+                128,
+                1802
+            ]
+        ],
+        "accuracy": 0.9383579383579383
+    },
+    "Gradient Boosting Classifier": {
+        "conf_matrix": [
+            [
+                1870,
+                61
+            ],
+            [
+                77,
+                1853
+            ]
+        ],
+        "accuracy": 0.9642579642579643
+    },
+    "XGB Classifier": {
+        "conf_matrix": [
+            [
+                1882,
+                49
+            ],
+            [
+                29,
+                1901
+            ]
+        ],
+        "accuracy": 0.9797979797979798
+    },
+    "XGBRF Classifier": {
+        "conf_matrix": [
+            [
+                1837,
+                94
+            ],
+            [
+                92,
+                1838
+            ]
+        ],
+        "accuracy": 0.9518259518259519
+    },
+    "Random Forest Classifier": {
+        "conf_matrix": [
+            [
+                1884,
+                47
+            ],
+            [
+                44,
+                1886
+            ]
+        ],
+        "accuracy": 0.9764309764309764
+    },
+    "K Neighbors Classifier": {
+        "conf_matrix": [
+            [
+                1754,
+                177
+            ],
+            [
+                183,
+                1747
+            ]
+        ],
+        "accuracy": 0.9067599067599068
+    },
+    "XGB Classifier BEST": {
+        "conf_matrix": [
+            [
+                1873,
+                58
+            ],
+            [
+                37,
+                1893
+            ]
+        ],
+        "accuracy": 0.9753949753949754
+    },
+    "Random Forest Classifier BEST": {
+        "conf_matrix": [
+            [
+                1880,
+                51
+            ],
+            [
+                37,
+                1893
+            ]
+        ],
+        "accuracy": 0.9772079772079773
+    },
+    "Gradient Boosting Classifier BEST": {
+        "conf_matrix": [
+            [
+                1878,
+                53
+            ],
+            [
+                45,
+                1885
+            ]
+        ],
+        "accuracy": 0.9746179746179746
+    }
+}
