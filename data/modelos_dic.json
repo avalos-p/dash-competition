@@ -10,7 +10,8 @@
                 1455
             ]
         ],
-        "accuracy": 0.8466718466718467
+        "accuracy": 0.8466718466718467,
+        "info": "Logistic regression, despite its name, is a classification model rather than a regression model. It's simple and efficient for binary and linear classification problems, widely used in various industries."
     },
     "Perceptron": {
         "conf_matrix": [
@@ -23,7 +24,8 @@
                 1209
             ]
         ],
-        "accuracy": 0.7122507122507122
+        "accuracy": 0.7122507122507122,
+        "info": "The Perceptron, introduced by Frank Rosenblatt in the 1950s, is among the simplest neural network models. It consists of a single layer of input nodes connected to output nodes, primarily suitable for learning linearly separable patterns."
     },
     "SVC(Support Vector Classifier)": {
         "conf_matrix": [
@@ -36,7 +38,8 @@
                 1666
             ]
         ],
-        "accuracy": 0.887075887075887
+        "accuracy": 0.887075887075887,
+        "info": "SVC, a specific implementation of Support Vector Machine for classification, aims to find the best hyperplane separating data points into different classes."
     },
     "Ada Boost Classifier": {
         "conf_matrix": [
@@ -49,7 +52,8 @@
                 1802
             ]
         ],
-        "accuracy": 0.9383579383579383
+        "accuracy": 0.9383579383579383,
+        "info": "AdaBoost, or Adaptive Boosting, is an ensemble learning algorithm useful for both classification and regression tasks."
     },
     "Gradient Boosting Classifier": {
         "conf_matrix": [
@@ -62,7 +66,8 @@
                 1853
             ]
         ],
-        "accuracy": 0.9642579642579643
+        "accuracy": 0.9642579642579643,
+        "info": "Gradient Boosting is a functional gradient algorithm repeatedly selecting functions leading towards weak hypotheses or negative gradients, effectively minimizing loss functions by combining several weak learning models."
     },
     "XGB Classifier": {
         "conf_matrix": [
@@ -75,7 +80,8 @@
                 1901
             ]
         ],
-        "accuracy": 0.9797979797979798
+        "accuracy": 0.9797979797979798,
+        "info": "XGBoost is built for speed, simplicity, and handling large datasets effectively. In our project, it emerged as the top performer in accurately detecting credit card fraud."
     },
     "XGBRF Classifier": {
         "conf_matrix": [
@@ -88,7 +94,8 @@
                 1838
             ]
         ],
-        "accuracy": 0.9518259518259519
+        "accuracy": 0.9518259518259519,
+        "info": "Extreme Gradient Boosting Random Forest is an ensemble learning algorithm similar to random forest, combining multiple machine learning algorithms to obtain better models."
     },
     "Random Forest Classifier": {
         "conf_matrix": [
@@ -101,7 +108,8 @@
                 1886
             ]
         ],
-        "accuracy": 0.9764309764309764
+        "accuracy": 0.9764309764309764,
+        "info": "Random Forest consists of a combination of tree classifiers. Each tree is generated using a random vector independently sampled from the input vector, collectively voting for the most popular class to classify an input vector."
     },
     "K Neighbors Classifier": {
         "conf_matrix": [
@@ -114,9 +122,10 @@
                 1747
             ]
         ],
-        "accuracy": 0.9067599067599068
+        "accuracy": 0.9067599067599068,
+        "info": "The k-nearest neighbors algorithm is a non-parametric classification method used for both classification and regression tasks, based on the k closest training examples in the dataset."
     },
-    "XGB Classifier BEST": {
+    "XGB Classifier W/Hyperparameters": {
         "conf_matrix": [
             [
                 1873,
@@ -127,9 +136,10 @@
                 1893
             ]
         ],
-        "accuracy": 0.9753949753949754
+        "accuracy": 0.9753949753949754,
+        "info": "XGBoost is designed for speed, ease of use, and performance on large datasets. Random search for hyperparameters didn't yield expected results; the XGB classifier without random search proved to be more effective."
     },
-    "Random Forest Classifier BEST": {
+    "Random Forest Classifier W/Hyperparameters": {
         "conf_matrix": [
             [
                 1880,
@@ -140,9 +150,10 @@
                 1893
             ]
         ],
-        "accuracy": 0.9772079772079773
+        "accuracy": 0.9772079772079773,
+        "info": "Random Forest, enhanced with hyperparameter tuning through random search, showed slight improvement, ranking as the second most effective model."
     },
-    "Gradient Boosting Classifier BEST": {
+    "Gradient Boosting Classifier W/Hyperparameters": {
         "conf_matrix": [
             [
                 1878,
@@ -153,6 +164,7 @@
                 1885
             ]
         ],
-        "accuracy": 0.9746179746179746
+        "accuracy": 0.9746179746179746,
+        "info": "Gradient Boosting, with hyperparameters optimized, combines weak learning models effectively to produce powerful predictive models."
     }
 }
