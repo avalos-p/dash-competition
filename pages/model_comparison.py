@@ -9,8 +9,7 @@ import plotly.express as px
 from plotly.subplots import make_subplots
 import numpy as np
 
-
-dash.register_page(__name__)
+dash.register_page(__name__,name="Model Comparision")
 
 models_information = models_dict() 
 
